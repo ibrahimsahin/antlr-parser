@@ -1,0 +1,25 @@
+assignment "BiL342-10-2" {
+subject: "Domain Specific Formal Language Processing".
+start-date: 2010/3/8 - 10:00.
+end-date: 2010/03/24 - 16:45.
+end-date: 1990/09/10 - 10:10.
+advisors: "Ersin Toreci", "Ersin Er".
+submission-format {
+directory "src/main/java/tr/edu/hacettepe/cs/submitdsl" : mandatory {
+file "SubmitDslEngine.java" : mandatory.
+file "MySubmitDslEngine.java" : mandatory.
+file "SubmitModel.java" : mandatory.
+file "MySubmitModel.java" : mandatory.
+file "MySubmitFormat.java" : mandatory ,folder-recursive.
+file-pattern "*.txt" : mandatory.
+}
+directory "src/main/antlr3/tr/edu/hacettepe/cs/submitdsl" : mandatory {
+file "SubmitDsl.g" : mandatory.
+file "SubmitDsl.tokens" :optional.
+file-pattern "*.png": mandatory,folder-recursive.
+}
+directory "report" :mandatory{
+file "report.pdf" : optional.
+}
+}
+}

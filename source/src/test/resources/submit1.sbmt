@@ -1,0 +1,8 @@
+assignment "BiL342-10-2" {
+	end-date: 2010/3/24 - 16:45.
+	submission-format {
+		directory "src" : mandatory {
+			file "Main.java" : mandatory.
+		}
+	}
+}
